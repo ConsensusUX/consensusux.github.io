@@ -11,14 +11,14 @@ remote_theme: just-the-docs/just-the-docs
 # Aux links (top-right corner)
 aux_links:
   "View on GitHub":
-    - "https://github.com/ConsensusUX/consensus.github.io"
+    - "https://github.com/ConsensusUX/consensusux.github.io"
 
 aux_links_new_tab: true
 
 # Footer
 gh_edit_link: true
 gh_edit_link_text: "Edit this page on GitHub"
-gh_edit_repository: "https://github.com/ConsensusUX/consensus.github.io"
+gh_edit_repository: "https://github.com/ConsensusUX/consensusux.github.io"
 gh_edit_branch: "main"
 gh_edit_view_mode: "edit"
 
