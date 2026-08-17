@@ -6,7 +6,6 @@ title: ConsensusUX
 description: Open source UX for helping groups reach consensus
 url: "https://consensusux.github.io"
 
-theme: just-the-docs
 remote_theme: just-the-docs/just-the-docs
 
 # Aux links (top-right corner)
