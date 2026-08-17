@@ -1,0 +1,54 @@
+# ConsensusUX Wiki
+# GitHub Pages + just-the-docs theme
+# Docs: https://just-the-docs.com/
+
+title: ConsensusUX
+description: Open source UX for helping groups reach consensus
+url: "https://consensusux.github.io"
+
+remote_theme: just-the-docs/just-the-docs
+
+# Aux links (top-right corner)
+aux_links:
+  "View on GitHub":
+    - "https://github.com/ConsensusUX/consensus.github.io"
+
+aux_links_new_tab: true
+
+# Footer
+gh_edit_link: true
+gh_edit_link_text: "Edit this page on GitHub"
+gh_edit_repository: "https://github.com/ConsensusUX/consensus.github.io"
+gh_edit_branch: "main"
+gh_edit_view_mode: "edit"
+
+# Enable search
+search_enabled: true
+search:
+  heading_level: 2
+  previews: 3
+
+# Color scheme
+color_scheme: light
+
+# Back to top link
+back_to_top: true
+back_to_top_text: "Back to top"
+
+# Callouts (for status badges, notes, warnings)
+callouts:
+  note:
+    title: Note
+    color: blue
+  warning:
+    title: Warning
+    color: red
+  built:
+    title: Built
+    color: green
+  in-progress:
+    title: In Progress
+    color: yellow
+  planned:
+    title: Planned
+    color: grey-dk
