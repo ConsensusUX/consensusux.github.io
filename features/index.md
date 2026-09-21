@@ -26,6 +26,7 @@ ConsensusUX is designed for horizontal groups — communities, collectives, and 
 | 4 | [Soft Lock Disputes](soft-lock-disputes) | Planned | Conflict resolution, mutual lock, concession mechanics | P4 |
 | 5 | [Federation](federation) | Planned | Multi-group relations, shared chats, group vouching | P5 |
 | 6 | [Settings & Configuration](settings) | Planned | Per-chat, per-group, per-user settings via consensus | P6 |
+| 7 | [Relay Chat](relay-chat) | Planned | Standalone output chat for settings resolution, cross-group relaying, checklist formatting | P6 |
 
 > All features are planned. No production code has been written.
 {: .planned }

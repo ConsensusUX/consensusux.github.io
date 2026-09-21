@@ -80,8 +80,10 @@ Scores are recalculated each time a new judgment is submitted. Each proposal car
 | Binary thumbs up | `green_score` +contribution |
 | Degrees 1–2 | Strong `green_score` contribution |
 | Degree 3 | Moderate `green_score` contribution |
-| Degrees 4–5 | Weak contribution to either score (ambivalent zone) |
-| Degrees 6–7 | Moderate `red_score` contribution |
+| Degree 4 | Weak `green_score` contribution |
+| Degree 5 | `green_score → 0.5` |
+| Degree 6 | `red_score → 0.5` |
+| Degree 7 | Moderate `red_score` contribution |
 | Degree 8 | Strong `red_score` contribution |
 | Degrees 9–10 | Hard `red_score` contribution |
 | Binary thumbs down | `red_score` +contribution |
@@ -134,7 +136,20 @@ This gives members a quick signal of how much deliberation a proposal has attrac
 
 ### Addressing Concerns
 
-When a chain message directly addresses and resolves a concern that generated a red judgment, the resolution can **cancel out** that red score contribution. The exact propagation formula is an open question.
+Chain messages dynamically affect the parent proposal's score through a cancellation mechanic:
+
+1. **Person 1** posts a consenting judgment on a proposal → `green_score +1`
+2. **Person 2** challenges that judgment with a dissenting chain message
+3. **Person 1** sustains the challenge by posting a consenting judgment on Person 2's dissent (green vote on the red chain message)
+4. Person 1's original `green_score` contribution is **cancelled out** — the system recognises the objection was sustained
+
+The same logic works in reverse for `red_score`:
+1. **Person 1** posts a dissenting judgment → `red_score +1`
+2. **Person 2** challenges that dissent in the chain
+3. **Person 1** sustains the challenge (consenting to Person 2's challenge)
+4. Person 1's original `red_score` contribution is **cancelled out**
+
+This makes output chat rankings dynamic — misunderstood or mis-articulated proposals can be corrected through chain deliberation rather than accumulating permanent score debris.
 
 ---
 
@@ -229,7 +244,7 @@ ProposalScore
 
 ## Open Questions
 
-- **Chain score propagation**: What is the exact formula for how a judgment on a chain message affects the root proposal's score? Is it weighted by chain depth?
+- **Chain score propagation**: The cancellation mechanic is defined (sustained challenges cancel the original score contribution), but should deeper chain levels have diminishing weight? How does this scale with many participants?
 - **Chain depth limit**: How deep can chains go before performance degrades? Is a hard depth limit enforced, or is deep nesting just visually collapsed?
 - **Score recalculation timing**: Real-time recalculation on every judgment submission, or batched? Real-time is more accurate but creates write pressure at scale.
 - **Proposal vs. discussion message**: Is every message a proposal, or does the system distinguish between proposals (subject to scoring) and discussion messages (not scored)? If the latter, how does a member mark a message as a proposal?

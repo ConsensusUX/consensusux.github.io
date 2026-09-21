@@ -84,6 +84,44 @@ A shared chat is a chat space accessible to members of both (or potentially more
 
 ---
 
+## Consensual Information Flow Between Groups
+
+Federation information flow is governed by three interlocking settings, ensuring both groups actively consent at every step:
+
+### The Three Settings
+
+| # | Setting | Set where | By whom |
+|---|---------|-----------|---------|
+| 1 | Make Output chat B visible to Group A | Output chat B settings, in Group B | Group B members |
+| 2 | Publish to Output chat B | Input chat A settings, in Group A | Group A members |
+| 3 | Accept publishing from federated chat | Output chat B settings, in Group B | Group B members |
+
+### How It Works
+
+1. **Both groups federate** — co-vouching establishes the relationship, making each group's output chats available as selectable options in the other's settings
+2. **Group B makes an output chat visible** — in the settings of their output chat, Group B selects Group A as a group that can see this chat
+3. **Group A proposes publishing** — Group A sees Group B's visible output chat as a selectable destination in their input chat's "Publish to additional federated Output chat" setting. Group A consents to publish there.
+4. **Group B accepts** — Group A's publishing request appears in Group B's "Accept publishing from federated input chat" setting. Group B consents to receive.
+
+Once all three settings are consented to, proposals from Group A's input chat flow into Group B's output chat.
+
+> Any user from either group can break an established information flow by red-voting in any of the three relevant settings, or the federation relationship itself. This individual veto is safe because it is underwritten by the vouching and soft lock systems that hold users accountable.
+{: .note }
+
+### Nested Consent
+
+This structure implements an **ecology of consent** — like any consensual activity, saying yes at one level leads to more specific decisions:
+
+- To flow information between groups, both must consent to the relationship (federation)
+- One group must indicate a specific output they're open to sharing
+- The other group must propose a specific input to publish from
+- The first group must accept that specific arrangement
+- Even then, each individual piece of information must receive consent from the publishing group before it flows
+
+Consent can be withdrawn from both the specific item and the relationship in general at any time.
+
+---
+
 ## Flat Hierarchy Principle
 
 ConsensusUX Federation is not a higher tier of governance. It is the same layer extended outward:

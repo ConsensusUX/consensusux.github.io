@@ -30,8 +30,10 @@ Each judgment on a proposal carries:
 | Binary: down (0) | `red_score` | Positive contribution |
 | Degrees: 1–2 | `green_score` | Strong positive |
 | Degrees: 3 | `green_score` | Moderate positive |
-| Degrees: 4–5 | — | Weak / borderline |
-| Degrees: 6–7 | `red_score` | Moderate positive |
+| Degree: 4 | `green_score` | Weak positive |
+| Degree: 5 | `green_score` | Midpoint (`green_score → 0.5`) |
+| Degree: 6 | `red_score` | Midpoint (`red_score → 0.5`) |
+| Degree: 7 | `red_score` | Moderate positive |
 | Degrees: 8 | `red_score` | Strong positive |
 | Degrees: 9–10 | `red_score` | Hard dissent |
 
@@ -74,9 +76,13 @@ else:
 
 ## Chain Score Propagation
 
-- Chain messages (judgments on judgments) can affect the parent proposal's score
-- Addressing concerns raised in a chain can cancel out red scores
-- The exact propagation formula is an **open design question**
+Chain messages dynamically affect the parent proposal's score through a **cancellation mechanic**:
+
+- If Person 1 adds a consenting judgment (`green_score +1`) and Person 2 challenges it with a dissenting chain message, and Person 1 then **sustains** Person 2's challenge (green vote on the dissent), Person 1's original `green_score` contribution is cancelled out.
+- The same applies in reverse: if a `red_score` contribution is challenged and the original dissenter sustains the challenge, the `red_score` is cancelled.
+- This means output chat rankings are **dynamic** — proposals can recover from misunderstood objections through chain deliberation.
+
+The cancellation mechanic provides the scaffolding for addressing bad faith actors who have gained group access.
 
 ---
 
@@ -103,9 +109,8 @@ function calculateProposalScore(judgments: Judgment[]): ProposalScore {
       else red_score += 1;
     } else {
       // degrees: 1-10
-      if (j.value <= 3) green_score += (4 - j.value) / 3; // 1→1.0, 2→0.67, 3→0.33
-      else if (j.value >= 7) red_score += (j.value - 6) / 4; // 7→0.25, 8→0.5, 9→0.75, 10→1.0
-      // 4-6: minimal contribution to either score
+      if (j.value <= 5) green_score += (6 - j.value) / 5; // 1→1.0, 2→0.8, 3→0.6, 4→0.4, 5→0.2
+      else red_score += (j.value - 5) / 5;                // 6→0.2, 7→0.4, 8→0.6, 9→0.8, 10→1.0
     }
   }
 

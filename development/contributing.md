@@ -57,5 +57,6 @@ ConsensusUX is committed to the same principles it builds: equitable participati
 
 ## Contact
 
+- Email: [beetleintheroots@proton.me](mailto:beetleintheroots@proton.me)
 - GitHub: [ConsensusUX](https://github.com/ConsensusUX)
 - Wiki: [consensusux.github.io](https://consensusux.github.io)

@@ -24,7 +24,7 @@ Group membership is not binary. Members move through tiers as they establish tru
 
 | Tier | Color Code | Description | Duration |
 |------|------------|-------------|----------|
-| Probationary | Dark green | New members who have received enough vouches to join but have not yet completed the trust period | Default 3 months |
+| Probationary | Dark green | New members who have received enough vouches to join but have not yet completed the trust period. Days in probation are displayed (e.g. "89 days") | Default 3 months |
 | Full | Dark green | Members who have completed probation without incident | Ongoing |
 | Provisional | Light green | Members with reduced standing (e.g. vouch count has dropped below threshold) | Variable |
 | Removed | Red | Former members who have left voluntarily or been removed through soft lock | N/A |
