@@ -7,8 +7,8 @@ layout: default
 
 # Soft Lock Disputes
 
-> This feature is planned. No production code has been written.
-{: .planned }
+> Track progress: [M4: Soft Lock Disputes](https://github.com/ConsensusUX/ConsensusUX/milestone/5)
+{: .note }
 
 Soft Lock is a novel conflict resolution mechanism designed for horizontal groups that have no administrators and no unilateral removal authority. When a member believes another has committed a serious infraction, they can initiate a dispute that mutually immobilizes both parties until one party concedes. The group provides input through chain messages but cannot directly vote to remove anyone.
 

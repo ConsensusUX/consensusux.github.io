@@ -7,8 +7,8 @@ layout: default
 
 # Settings & Configuration
 
-> This feature is planned. No production code has been written.
-{: .planned }
+> Track progress: [M5: Settings & Relay Chat](https://github.com/ConsensusUX/ConsensusUX/milestone/6)
+{: .note }
 
 A defining feature of ConsensusUX is that settings are not controlled by admins — they are **outputs of group consensus**. Every configurable aspect of the app is itself subject to the consent check process. A member proposes a settings change; the group deliberates; if consensus is reached, the setting updates. Settings that affect shared experience are resolved through [Relay Chats](relay-chat) — standalone consensus UIs with no paired input chat.
 

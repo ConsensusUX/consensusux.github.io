@@ -7,8 +7,8 @@ layout: default
 
 # Getting on the Network
 
-> This feature is planned. No production code has been written.
-{: .planned }
+> Track progress: [M1: Getting on the Network](https://github.com/ConsensusUX/ConsensusUX/milestone/2)
+{: .note }
 
 Users join ConsensusUX through a deliberate onboarding flow designed for at-risk populations: dissidents, abuse survivors, trans people, and others for whom standard account creation poses real security risks. Every design decision in this flow is intentional.
 

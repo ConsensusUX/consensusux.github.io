@@ -7,8 +7,8 @@ layout: default
 
 # Group Membership
 
-> This feature is planned. No production code has been written.
-{: .planned }
+> Track progress: [M3: Group Membership](https://github.com/ConsensusUX/ConsensusUX/milestone/4)
+{: .note }
 
 Groups are the core organizational unit of ConsensusUX. Every user belongs to at least one group, and all activity — chat, consensus, disputes, federation — happens within a group context. Membership is structured, tracked, and visible to all members.
 

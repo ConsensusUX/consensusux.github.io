@@ -36,8 +36,9 @@ The project is grounded in [anarchist cybernetics](theory/academic-foundation#an
 
 ## Project Status
 
-ConsensusUX is in the **design and specification phase**. The UX has been developed through a dissertation process including community co-design workshops. No production code has been written yet.
+Track development progress on the [GitHub project](https://github.com/ConsensusUX/ConsensusUX) and its [milestones](https://github.com/ConsensusUX/ConsensusUX/milestones).
 
+- **Code**: [github.com/ConsensusUX/ConsensusUX](https://github.com/ConsensusUX/ConsensusUX)
+- **Roadmap**: [ROADMAP.md](https://github.com/ConsensusUX/ConsensusUX/blob/main/ROADMAP.md)
 - **Design**: [Figma](https://www.figma.com/design/6xXQKCxXbBoOBSEGL9YzyX/Consensus_UX)
 - **Wiki**: [consensusux.github.io](https://consensusux.github.io)
-- **Code**: [GitHub](https://github.com/ConsensusUX)
