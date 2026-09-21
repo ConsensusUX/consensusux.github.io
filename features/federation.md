@@ -7,8 +7,8 @@ layout: default
 
 # Federation
 
-> This feature is planned. No production code has been written.
-{: .planned }
+> Track progress: [M6: Federation](https://github.com/ConsensusUX/ConsensusUX/milestone/7)
+{: .note }
 
 Federation enables multiple groups to form relationships with each other and share decision-making through shared chats. The architecture is deliberately flat: the same consensus mechanics that govern decisions within a group also govern decisions between groups. Federation is not a separate tier of authority — it is horizontal organizing at scale.
 

@@ -9,8 +9,8 @@ has_children: true
 
 This section contains step-by-step guides for using ConsensusUX — from creating an account and joining a group, to making proposals and participating in consensus decisions.
 
-> ConsensusUX is currently in the design and specification phase. These guides describe intended functionality and will be updated as the application is built.
-{: .planned }
+> These guides describe intended functionality and will be updated as the application is built. Track progress on the [GitHub milestones](https://github.com/ConsensusUX/ConsensusUX/milestones).
+{: .note }
 
 ---
 

@@ -7,8 +7,8 @@ layout: default
 
 # Relay Chat
 
-> This feature is planned. No production code has been written.
-{: .planned }
+> Track progress: [M5: Settings & Relay Chat](https://github.com/ConsensusUX/ConsensusUX/milestone/6)
+{: .note }
 
 A relay chat is a specialised output chat used where there is no traditional input chat — or where proposals are relayed between input chats. It is the primary UI through which settings are configured by consensus.
 

@@ -7,8 +7,8 @@ layout: default
 
 # Core Flow
 
-> This feature is planned. No production code has been written.
-{: .planned }
+> Track progress: [M2: Core Flow](https://github.com/ConsensusUX/ConsensusUX/milestone/3)
+{: .note }
 
 The Core Flow is the consensus mechanics engine — the central value proposition of ConsensusUX. It transforms a messaging app into a decision-making tool by layering structured consent evaluation on top of ordinary conversation.
 
