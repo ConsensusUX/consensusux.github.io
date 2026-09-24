@@ -10,7 +10,7 @@ layout: default
 > Track progress: [M2: Core Flow](https://github.com/ConsensusUX/ConsensusUX/milestone/3)
 {: .note }
 
-The Core Flow is the consensus mechanics engine — the central value proposition of ConsensusUX. It transforms a messaging app into a decision-making tool by layering structured consent evaluation on top of ordinary conversation.
+The Core Flow is the consensus mechanics engine — the central value proposition of Consensus UX. It transforms a messaging app into a decision-making tool by layering structured consent evaluation on top of ordinary conversation. The core flow describes the core mechanic of the consent check, as well as acting as a hub for the rest of the features on the application  
 
 ---
 
