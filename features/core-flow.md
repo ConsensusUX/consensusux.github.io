@@ -184,13 +184,23 @@ The red/green scoring system includes a **texture differentiation mode** for col
 
 ## Wireframes
 
+Input chat basic
+
 ![Input chat (discussion)](../assets/images/input-chat.png)
+
+Output chat basic 
 
 ![Output chat (consent-ordered proposals)](../assets/images/output-chat.png)
 
+Chain message
+
 ![Chain message / judgment response](../assets/images/chain-message.png)
 
+Consent check step 1
+
 ![Consent check step 1: select judgment](../assets/images/voting-step-1.png)
+
+Consent check step 2
 
 ![Consent check step 2: provide reasoning](../assets/images/voting-step-2.png)
 
